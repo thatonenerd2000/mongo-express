@@ -1,0 +1,21 @@
+extends layout
+block content
+
+  h3=title
+  form#upload(name="uploadForm" method="post" action="/upload")
+    span Choose Image:
+    span &nbsp
+    input#chooseimg(name="img" type="file")
+    br
+    br
+    span Name
+    span &nbsp;
+    input#name(type="text" placeholder="Full Name" name="name")
+    br
+    br
+    span Age
+    span &nbsp;
+    input#name(type="number" placeholder="Age" name="age")
+    br
+    br
+    button#submit_form(type="submit") Submit

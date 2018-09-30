@@ -1,0 +1,6 @@
+extends layout
+block content
+  h3 Informations
+  ul
+    each info, i in information
+      li= "Name: " + info.Name + ", age " + info.Age
